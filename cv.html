@@ -1,146 +1,95 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>
-        CV — Joyce Stephanie Naibaho
-    </title>
-
+    <title>CV — Joyce Stephanie Naibaho</title>
+    <meta name="description" content="Curriculum Vitae Joyce Stephanie Naibaho, mahasiswa Informatika Institut Teknologi Del dengan minat pada machine learning, UI/UX design, data analysis, dan pengembangan web.">
+    <link rel="preload" as="image" href="assets/img/joyce-profile.webp" type="image/webp" fetchpriority="high">
 
     <!-- Tailwind CSS 4 -->
-
-    <script
-        src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
-    ></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
 
     <style type="text/tailwindcss">
-
         @theme {
-
-            --color-brand: #635bff;
-
+            --color-brand: #4f46e5;
             --color-brand-dark: #4f46e5;
-
             --color-soft: #eef2ff;
-
             --color-border: #e5e7eb;
-
             --color-text: #1f2937;
-
             --color-muted: #6b7280;
-
         }
-
     </style>
-
 </head>
 
+<body class="bg-slate-50 text-slate-800 antialiased">
 
-<body
-    class="bg-slate-50 text-slate-800 antialiased"
->
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
 
+        <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-
-    <!-- =========================
-         NAVBAR
-    ========================== -->
-
-    <header
-        class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur"
-    >
-
-
-        <nav
-            class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
-        >
-
-
-            <div
-                class="flex items-center justify-between py-3"
-            >
-
-
-                <!-- Logo NexaLab -->
+            <div class="flex items-center justify-between py-3">
 
                 <a
                     href="index.html"
                     class="flex items-center"
                     aria-label="NexaLab"
                 >
-
                     <img
-                        src="assets/img/logo-nexalab.png"
+                        src="assets/img/logo-nexalab.webp"
                         alt="NexaLab"
+                        width="160"
+                        height="43"
+                        decoding="async"
                         class="h-auto w-36 sm:w-40"
                     >
-
                 </a>
 
 
-
-                <!-- Desktop Navigation -->
-
-                <div
-                    class="hidden items-center gap-5 text-sm font-medium lg:flex"
-                >
-
+                <!-- Desktop -->
+                <div class="hidden items-center gap-5 text-sm font-medium lg:flex">
 
                     <a
                         href="index.html#layanan"
-                        class="text-slate-600 transition hover:text-[#635bff]"
+                        class="text-slate-600 transition hover:text-[#4f46e5]"
                     >
                         Layanan
                     </a>
 
-
                     <a
                         href="index.html#tentang"
-                        class="text-slate-600 transition hover:text-[#635bff]"
+                        class="text-slate-600 transition hover:text-[#4f46e5]"
                     >
                         Tentang
                     </a>
 
-
                     <a
                         href="index.html#kontak"
-                        class="text-slate-600 transition hover:text-[#635bff]"
+                        class="text-slate-600 transition hover:text-[#4f46e5]"
                     >
                         Kontak
                     </a>
 
-
                     <a
                         href="blog.html"
-                        class="text-slate-600 transition hover:text-[#635bff]"
+                        class="text-slate-600 transition hover:text-[#4f46e5]"
                     >
                         Blog
                     </a>
 
-
                     <a
                         href="cv.html"
-                        class="font-semibold text-[#635bff]"
+                        class="font-semibold text-[#4f46e5]"
                     >
                         CV
                     </a>
 
-
                 </div>
 
 
-
-                <!-- Mobile Button -->
-
+                <!-- Mobile -->
                 <button
                     id="menuButton"
                     type="button"
@@ -150,7 +99,6 @@
                     aria-label="Menu navigasi"
                 >
 
-
                     <svg
                         class="h-6 w-6"
                         viewBox="0 0 24 24"
@@ -158,209 +106,136 @@
                         stroke="currentColor"
                         stroke-width="1.8"
                     >
-
                         <path
                             stroke-linecap="round"
                             d="M4 7h16M4 12h16M4 17h16"
                         />
-
                     </svg>
 
-
                 </button>
-
 
             </div>
 
 
-
             <!-- Mobile menu -->
-
             <div
                 id="mobileMenu"
                 class="hidden border-t border-slate-200 py-2 lg:hidden"
             >
 
-
-                <div
-                    class="flex flex-col text-sm font-medium"
-                >
-
+                <div class="flex flex-col text-sm font-medium">
 
                     <a
                         href="index.html#layanan"
-                        class="rounded-lg px-3 py-2 text-slate-600 transition hover:bg-[#eef2ff] hover:text-[#635bff]"
+                        class="rounded-lg px-3 py-2 text-slate-600 transition hover:bg-[#eef2ff] hover:text-[#4f46e5]"
                     >
                         Layanan
                     </a>
 
-
                     <a
                         href="index.html#tentang"
-                        class="rounded-lg px-3 py-2 text-slate-600 transition hover:bg-[#eef2ff] hover:text-[#635bff]"
+                        class="rounded-lg px-3 py-2 text-slate-600 transition hover:bg-[#eef2ff] hover:text-[#4f46e5]"
                     >
                         Tentang
                     </a>
 
-
                     <a
                         href="index.html#kontak"
-                        class="rounded-lg px-3 py-2 text-slate-600 transition hover:bg-[#eef2ff] hover:text-[#635bff]"
+                        class="rounded-lg px-3 py-2 text-slate-600 transition hover:bg-[#eef2ff] hover:text-[#4f46e5]"
                     >
                         Kontak
                     </a>
 
-
                     <a
                         href="blog.html"
-                        class="rounded-lg px-3 py-2 text-slate-600 transition hover:bg-[#eef2ff] hover:text-[#635bff]"
+                        class="rounded-lg px-3 py-2 text-slate-600 transition hover:bg-[#eef2ff] hover:text-[#4f46e5]"
                     >
                         Blog
                     </a>
 
-
                     <a
                         href="cv.html"
-                        class="rounded-lg px-3 py-2 font-semibold text-[#635bff]"
+                        class="rounded-lg px-3 py-2 font-semibold text-[#4f46e5]"
                     >
                         CV
                     </a>
 
-
                 </div>
 
             </div>
-
 
         </nav>
 
     </header>
 
 
-
-    <!-- =========================
-         MOBILE MENU SCRIPT
-    ========================== -->
-
     <script>
-
         const menuButton =
-            document.getElementById(
-                "menuButton"
-            );
-
+            document.getElementById("menuButton");
 
         const mobileMenu =
-            document.getElementById(
-                "mobileMenu"
+            document.getElementById("mobileMenu");
+
+        menuButton.addEventListener("click", function () {
+
+            const isOpen =
+                menuButton.getAttribute("aria-expanded") === "true";
+
+            menuButton.setAttribute(
+                "aria-expanded",
+                String(!isOpen)
             );
 
+            mobileMenu.classList.toggle("hidden");
 
-        menuButton.addEventListener(
-            "click",
-            function () {
-
-
-                const isOpen =
-                    menuButton.getAttribute(
-                        "aria-expanded"
-                    ) === "true";
-
-
-                menuButton.setAttribute(
-                    "aria-expanded",
-                    String(!isOpen)
-                );
-
-
-                mobileMenu.classList.toggle(
-                    "hidden"
-                );
-
-
-            }
-        );
-
+        });
     </script>
 
 
-
-    <!-- =========================
-         MAIN
-    ========================== -->
-
-    <main
-        class="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8"
-    >
+    <main class="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
 
 
+        <!-- Profil -->
+        <section class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
 
-        <!-- =========================
-             PROFIL
-        ========================== -->
-
-        <section
-            class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8"
-        >
-
-
-            <div
-                class="grid gap-8 md:grid-cols-[180px_1fr] md:items-start"
-            >
-
+            <div class="grid gap-8 md:grid-cols-[180px_1fr] md:items-start">
 
                 <!-- Foto -->
-
-                <div
-                    class="flex justify-center md:justify-start"
-                >
+                <div class="flex justify-center md:justify-start">
 
                     <img
-                        src="assets/img/joyce-profile.jpg"
+                        src="assets/img/joyce-profile.webp"
                         alt="Foto Joyce Stephanie Naibaho"
+                        width="176"
+                        height="224"
+                        fetchpriority="high"
+                        decoding="async"
                         class="h-56 w-44 rounded-xl object-cover object-top shadow-sm"
                     >
 
                 </div>
 
 
-
                 <!-- Informasi -->
-
                 <div>
 
-
-                    <p
-                        class="text-sm font-semibold uppercase tracking-[0.16em] text-[#635bff]"
-                    >
+                    <p class="text-sm font-semibold uppercase tracking-[0.16em] text-[#4f46e5]">
                         Curriculum Vitae
                     </p>
 
-
-                    <h1
-                        class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
-                    >
+                    <h1 class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
                         Joyce Stephanie Naibaho
                     </h1>
 
-
-                    <p
-                        class="mt-2 text-lg font-medium text-slate-600"
-                    >
+                    <p class="mt-2 text-lg font-medium text-slate-600">
                         Sarjana Informatika
                     </p>
 
 
-
                     <!-- Kontak -->
-
-                    <div
-                        class="mt-5 flex flex-wrap gap-3"
-                    >
-
+                    <div class="mt-5 flex flex-wrap gap-3">
 
                         <!-- Email -->
-
                         <a
                             href="mailto:joycestephanienaibaho@gmail.com"
                             class="inline-flex items-center gap-2 rounded-lg border border-indigo-200 bg-indigo-50 px-3 py-2 text-sm font-medium text-indigo-700 transition hover:-translate-y-0.5 hover:bg-indigo-100"
@@ -373,7 +248,6 @@
                                 stroke="currentColor"
                                 stroke-width="1.8"
                             >
-
                                 <rect
                                     x="3"
                                     y="5"
@@ -381,13 +255,11 @@
                                     height="14"
                                     rx="2"
                                 />
-
                                 <path
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                     d="m4 7 8 6 8-6"
                                 />
-
                             </svg>
 
                             Email
@@ -395,9 +267,7 @@
                         </a>
 
 
-
                         <!-- WhatsApp -->
-
                         <a
                             href="https://wa.me/6285805309021"
                             target="_blank"
@@ -412,19 +282,16 @@
                                 stroke="currentColor"
                                 stroke-width="1.8"
                             >
-
                                 <path
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                     d="M20 11.5a8 8 0 0 1-12.3 6.7L4 20l1.7-3.6A8 8 0 1 1 20 11.5Z"
                                 />
-
                                 <path
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                     d="M8.5 9.2c.2-.4.4-.5.8-.5h.4c.2 0 .4.1.5.4l.6 1.5c.1.3.1.5-.1.7l-.4.5c.5.9 1.3 1.5 2.2 1.9l.5-.5c.2-.2.4-.2.7-.1l1.4.6c.3.1.4.3.4.6v.4c0 .4-.2.6-.6.7"
                                 />
-
                             </svg>
 
                             WhatsApp
@@ -432,9 +299,7 @@
                         </a>
 
 
-
                         <!-- LinkedIn -->
-
                         <a
                             href="https://www.linkedin.com/in/joycestephanienaibaho"
                             target="_blank"
@@ -447,11 +312,7 @@
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
                             >
-
-                                <path
-                                    d="M6.5 8.3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM5.2 9.7h2.6V18H5.2V9.7ZM9.6 9.7h2.5v1.1h.1c.4-.7 1.2-1.4 2.6-1.4 2.8 0 3.3 1.8 3.3 4.1V18h-2.6v-3.9c0-1 0-2.1-1.3-2.1-1.3 0-1.5 1-1.5 2V18H9.6V9.7Z"
-                                />
-
+                                <path d="M6.5 8.3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM5.2 9.7h2.6V18H5.2V9.7ZM9.6 9.7h2.5v1.1h.1c.4-.7 1.2-1.4 2.6-1.4 2.8 0 3.3 1.8 3.3 4.1V18h-2.6v-3.9c0-1 0-2.1-1.3-2.1-1.3 0-1.5 1-1.5 2V18H9.6V9.7Z"/>
                             </svg>
 
                             LinkedIn
@@ -459,9 +320,7 @@
                         </a>
 
 
-
                         <!-- GitHub -->
-
                         <a
                             href="https://github.com/JoyceSNB"
                             target="_blank"
@@ -474,11 +333,7 @@
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
                             >
-
-                                <path
-                                    d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.3 1.1 2.9.8.1-.6.4-1.1.7-1.3-2.2-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.8 7c-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1.1a9.5 9.5 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1.1 2.7c0 3.9-2.4 4.7-4.6 5 .4.3.7 1 .7 2v1.5c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"
-                                />
-
+                                <path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.3 1.1 2.9.8.1-.6.4-1.1.7-1.3-2.2-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.8 7c-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1.1a9.5 9.5 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1.1 2.7c0 3.9-2.4 4.7-4.6 5 .4.3.7 1 .7 2v1.5c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/>
                             </svg>
 
                             GitHub
@@ -486,9 +341,7 @@
                         </a>
 
 
-
                         <!-- Lokasi -->
-
                         <span
                             class="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-600"
                         >
@@ -500,56 +353,39 @@
                                 stroke="currentColor"
                                 stroke-width="1.8"
                             >
-
                                 <path
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                     d="M12 21s7-5.2 7-11A7 7 0 1 0 5 10c0 5.8 7 11 7 11Z"
                                 />
-
                                 <circle
                                     cx="12"
                                     cy="10"
                                     r="2.5"
                                 />
-
                             </svg>
 
                             Medan, Sumatera Utara
 
                         </span>
 
-
                     </div>
-
 
 
                     <!-- Tentang -->
+                    <div class="mt-7">
 
-                    <div
-                        class="mt-7"
-                    >
-
-                        <h2
-                            class="border-b border-slate-300 pb-2 text-lg font-bold"
-                        >
+                        <h2 class="border-b border-slate-300 pb-2 text-lg font-bold">
                             Tentang Saya
                         </h2>
 
-
-                        <p
-                            class="mt-3 max-w-4xl text-sm leading-7 text-slate-700"
-                        >
-
-                            Mahasiswa Informatika di Institut Teknologi Del,
-                            aktif di Majelis Permusyawaratan Mahasiswa (MPM)
-                            serta memiliki minat di bidang machine learning,
-                            UI/UX design, dan pengembangan web.
-
+                        <p class="mt-3 max-w-4xl text-sm leading-7 text-slate-700">
+                            Mahasiswa Informatika di Institut Teknologi Del, aktif di
+                            Majelis Permusyawaratan Mahasiswa (MPM) serta memiliki minat
+                            di bidang machine learning, UI/UX design, dan pengembangan web.
                         </p>
 
                     </div>
-
 
                 </div>
 
@@ -558,306 +394,157 @@
         </section>
 
 
+        <!-- Pendidikan -->
+        <section class="mt-8">
 
-        <!-- =========================
-             PENDIDIKAN
-        ========================== -->
-
-        <section
-            class="mt-8"
-        >
-
-            <h2
-                class="border-b border-slate-300 pb-3 text-lg font-bold"
-            >
+            <h2 class="border-b border-slate-300 pb-3 text-lg font-bold">
                 Pendidikan
             </h2>
 
-
-            <div
-                class="mt-4 text-sm leading-relaxed"
-            >
-
+            <div class="mt-4 text-sm leading-relaxed">
 
                 <p class="font-semibold">
-
                     Informatika | IPK: 3.66/4.00
-
                 </p>
-
 
                 <p>
-
                     Institut Teknologi Del (2024 – Sekarang)
-
                 </p>
 
-
-                <ul
-                    class="mt-2 list-disc pl-5 text-slate-600"
-                >
-
-                    <li>
-                        SMA N 2 Medan
-                    </li>
-
-                    <li>
-                        SMPN 10 Medan
-                    </li>
-
-                    <li>
-                        SD HKBP Padang Bulan
-                    </li>
-
+                <ul class="mt-2 list-disc pl-5 text-slate-600">
+                    <li>SMA N 2 Medan</li>
+                    <li>SMPN 10 Medan</li>
+                    <li>SD HKBP Padang Bulan</li>
                 </ul>
-
 
             </div>
 
         </section>
 
 
+        <!-- Pengalaman -->
+        <section class="mt-8">
 
-        <!-- =========================
-             PENGALAMAN
-        ========================== -->
-
-        <section
-            class="mt-8"
-        >
-
-            <h2
-                class="border-b border-slate-300 pb-3 text-lg font-bold"
-            >
+            <h2 class="border-b border-slate-300 pb-3 text-lg font-bold">
                 Pengalaman
             </h2>
 
-
-            <div
-                class="mt-5 space-y-6"
-            >
-
-
-                <!-- Experience 1 -->
+            <div class="mt-5 space-y-6">
 
                 <article>
 
-
-                    <div
-                        class="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between"
-                    >
-
+                    <div class="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
 
                         <div>
 
-
-                            <h3
-                                class="font-semibold"
-                            >
-
-                                Anggota Komisi A – Administrasi dan
-                                Sekretariat | Organisasi
-
+                            <h3 class="font-semibold">
+                                Anggota Komisi A – Administrasi dan Sekretariat | Organisasi
                             </h3>
 
-
-                            <p
-                                class="text-sm text-slate-600"
-                            >
-
+                            <p class="text-sm text-slate-600">
                                 Majelis Permusyawaratan Mahasiswa (MPM),
                                 Institut Teknologi Del
-
                             </p>
-
 
                         </div>
 
-
-                        <span
-                            class="text-sm text-slate-500"
-                        >
-
+                        <span class="text-sm text-slate-500">
                             Februari 2026 – Sekarang
-
                         </span>
-
 
                     </div>
 
-
                 </article>
 
-
-
-                <!-- Experience 2 -->
 
                 <article>
 
-
-                    <div
-                        class="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between"
-                    >
-
+                    <div class="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
 
                         <div>
 
-
-                            <h3
-                                class="font-semibold"
-                            >
-
+                            <h3 class="font-semibold">
                                 Anggota Komite Konsumsi | Kepanitiaan
-
                             </h3>
 
-
-                            <p
-                                class="text-sm text-slate-600"
-                            >
-
+                            <p class="text-sm text-slate-600">
                                 Perayaan Natal Epiphania,
                                 Institut Teknologi Del
-
                             </p>
-
 
                         </div>
 
-
-                        <span
-                            class="text-sm text-slate-500"
-                        >
-
+                        <span class="text-sm text-slate-500">
                             Januari 2026
-
                         </span>
-
 
                     </div>
 
-
                 </article>
-
 
             </div>
 
         </section>
 
 
+        <!-- Proyek -->
+        <section class="mt-8">
 
-        <!-- =========================
-             PROYEK
-        ========================== -->
-
-        <section
-            class="mt-8"
-        >
-
-            <h2
-                class="border-b border-slate-300 pb-3 text-lg font-bold"
-            >
+            <h2 class="border-b border-slate-300 pb-3 text-lg font-bold">
                 Proyek
             </h2>
 
-
-            <div
-                class="mt-5 space-y-6"
-            >
+            <div class="mt-5 space-y-6">
 
 
                 <!-- Project 1 -->
+                <article class="rounded-2xl border border-slate-200 p-5 transition hover:-translate-y-1 hover:shadow-md">
 
-                <article
-                    class="rounded-2xl border border-slate-200 p-5 transition hover:-translate-y-1 hover:shadow-md"
-                >
-
-
-                    <div
-                        class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between"
-                    >
-
+                    <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
 
                         <div class="flex-1">
 
+                            <div class="flex items-start gap-3">
 
-                            <div
-                                class="flex items-start gap-3"
-                            >
-
-
-                                <span
-                                    class="pt-1 text-sm font-bold text-[#635bff]"
-                                >
+                                <span class="pt-1 text-sm font-bold text-[#4f46e5]">
                                     01
                                 </span>
 
-
                                 <div>
 
-
-                                    <h3
-                                        class="font-bold"
-                                    >
-
-                                        HMSAM and Gamification Elements
-                                        Analysis - English Practice Test
-                                        Quiz App
-
+                                    <h3 class="font-bold">
+                                        HMSAM and Gamification Elements Analysis -
+                                        English Practice Test Quiz App
                                     </h3>
 
-
-                                    <p
-                                        class="mt-2 text-sm leading-7 text-slate-600"
-                                    >
-
-                                        Riset UX dengan model HMSAM untuk
-                                        menganalisis elemen gamifikasi pada
-                                        aplikasi pembelajaran mobile, dan
-                                        merancang UI-nya menggunakan Figma.
-
+                                    <p class="mt-2 text-sm leading-7 text-slate-600">
+                                        Riset UX dengan model HMSAM untuk menganalisis
+                                        elemen gamifikasi pada aplikasi pembelajaran
+                                        mobile, dan merancang UI-nya menggunakan Figma.
                                     </p>
 
 
-                                    <div
-                                        class="mt-3 flex flex-wrap gap-2"
-                                    >
+                                    <div class="mt-3 flex flex-wrap gap-2">
 
-
-                                        <span
-                                            class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]"
-                                        >
+                                        <span class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]">
                                             Figma
                                         </span>
 
-
-                                        <span
-                                            class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]"
-                                        >
+                                        <span class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]">
                                             UX Research
                                         </span>
 
-
-                                        <span
-                                            class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]"
-                                        >
+                                        <span class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]">
                                             Mobile Design
                                         </span>
 
-
-                                        <span
-                                            class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]"
-                                        >
+                                        <span class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]">
                                             HMSAM
                                         </span>
 
-
-                                        <span
-                                            class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]"
-                                        >
+                                        <span class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]">
                                             April 2026
                                         </span>
-
 
                                     </div>
 
@@ -872,110 +559,64 @@
                             href="https://www.figma.com/design/JjnZAhuFDwie4AHI5DwOp7/11S24047_Hasil-Analisis-HMSAM-dan-Elemen-Gamifikasi-pada-Aplikasi-English-Practice-Test-Quiz?node-id=4-860"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="inline-flex shrink-0 items-center justify-center rounded-lg bg-[#635bff] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#4f46e5]"
+                            class="inline-flex shrink-0 items-center justify-center rounded-lg bg-[#4f46e5] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#4f46e5]"
                         >
-
                             Buka Figma ↗
-
                         </a>
-
 
                     </div>
 
                 </article>
 
 
-
                 <!-- Project 2 -->
+                <article class="rounded-2xl border border-slate-200 p-5 transition hover:-translate-y-1 hover:shadow-md">
 
-                <article
-                    class="rounded-2xl border border-slate-200 p-5 transition hover:-translate-y-1 hover:shadow-md"
-                >
-
-
-                    <div
-                        class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between"
-                    >
-
+                    <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
 
                         <div class="flex-1">
 
+                            <div class="flex items-start gap-3">
 
-                            <div
-                                class="flex items-start gap-3"
-                            >
-
-
-                                <span
-                                    class="pt-1 text-sm font-bold text-[#635bff]"
-                                >
+                                <span class="pt-1 text-sm font-bold text-[#4f46e5]">
                                     02
                                 </span>
 
-
                                 <div>
 
-
-                                    <h3
-                                        class="font-bold"
-                                    >
-
+                                    <h3 class="font-bold">
                                         Flower Blog Web Application
-
                                     </h3>
 
-
-                                    <p
-                                        class="mt-2 text-sm leading-7 text-slate-600"
-                                    >
-
+                                    <p class="mt-2 text-sm leading-7 text-slate-600">
                                         Aplikasi katalog bunga full stack
                                         (Spring Boot, Java, PostgreSQL) dengan
                                         autentikasi, CRUD, dashboard statistik,
                                         dan unit test proyek individu.
-
                                     </p>
 
 
-                                    <div
-                                        class="mt-3 flex flex-wrap gap-2"
-                                    >
+                                    <div class="mt-3 flex flex-wrap gap-2">
 
-
-                                        <span
-                                            class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]"
-                                        >
+                                        <span class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]">
                                             Spring Boot
                                         </span>
 
-
-                                        <span
-                                            class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]"
-                                        >
+                                        <span class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]">
                                             Java
                                         </span>
 
-
-                                        <span
-                                            class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]"
-                                        >
+                                        <span class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]">
                                             PostgreSQL
                                         </span>
 
-
-                                        <span
-                                            class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]"
-                                        >
+                                        <span class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]">
                                             Maven
                                         </span>
 
-
-                                        <span
-                                            class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]"
-                                        >
+                                        <span class="rounded-full bg-[#eef2ff] px-3 py-1 text-xs font-medium text-[#4f46e5]">
                                             November–Desember 2025
                                         </span>
-
 
                                     </div>
 
@@ -992,335 +633,198 @@
                             rel="noopener noreferrer"
                             class="inline-flex shrink-0 items-center justify-center rounded-lg bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-700"
                         >
-
                             GitHub ↗
-
                         </a>
-
 
                     </div>
 
                 </article>
-
 
             </div>
 
         </section>
 
 
+        <!-- Sertifikat -->
+        <section class="mt-8">
 
-        <!-- =========================
-             SERTIFIKAT
-        ========================== -->
-
-        <section
-            class="mt-8"
-        >
-
-
-            <h2
-                class="border-b border-slate-300 pb-3 text-lg font-bold"
-            >
+            <h2 class="border-b border-slate-300 pb-3 text-lg font-bold">
                 Sertifikat
             </h2>
 
-
-            <ol
-                class="mt-5 list-decimal space-y-2 pl-5 text-sm leading-relaxed text-slate-700"
-            >
-
+            <ol class="mt-5 list-decimal space-y-2 pl-5 text-sm leading-relaxed text-slate-700">
 
                 <li>
-
                     Linear Models in Machine Learning:
-                    Fundamentals and Applications
-                    (Agustus 2026)
-
+                    Fundamentals and Applications (Agustus 2026)
                 </li>
 
-
                 <li>
-
                     National AI &amp; Deep Learning Acceleration Bootcamp -
-                    Advanced Level, Nalara Academy
-                    (Agustus 2026)
-
+                    Advanced Level, Nalara Academy (Agustus 2026)
                 </li>
 
-
                 <li>
-
                     Bootcamp Sertifikasi Microsoft Office Excel,
-                    Word &amp; PowerPoint Specialist
-                    (Juli 2026)
-
+                    Word &amp; PowerPoint Specialist (Juli 2026)
                 </li>
-
 
                 <li>
-
-                    English &amp; Test Preparation Bootcamp
-                    (Juli 2026)
-
+                    English &amp; Test Preparation Bootcamp (Juli 2026)
                 </li>
-
 
                 <li>
-
-                    UI/UX Design with Figma
-                    (Juli 2026)
-
+                    UI/UX Design with Figma (Juli 2026)
                 </li>
-
 
                 <li>
-
-                    Bootcamp Data Analyst with SQL,
-                    DQLab
-                    (Juli 2026)
-
+                    Bootcamp Data Analyst with SQL, DQLab (Juli 2026)
                 </li>
-
 
             </ol>
 
         </section>
 
 
+        <!-- Keahlian -->
+        <section class="mt-8">
 
-        <!-- =========================
-             KEAHLIAN
-        ========================== -->
-
-        <section
-            class="mt-8"
-        >
-
-
-            <h2
-                class="border-b border-slate-300 pb-3 text-lg font-bold"
-            >
+            <h2 class="border-b border-slate-300 pb-3 text-lg font-bold">
                 Keahlian
             </h2>
 
-
-            <div
-                class="mt-5 space-y-6"
-            >
+            <div class="mt-5 space-y-6">
 
 
                 <!-- Programming -->
-
                 <div>
 
-
-                    <h3
-                        class="text-sm font-semibold"
-                    >
+                    <h3 class="text-sm font-semibold">
                         Programming
                     </h3>
 
+                    <div class="mt-3 flex flex-wrap gap-2">
 
-                    <div
-                        class="mt-3 flex flex-wrap gap-2"
-                    >
-
-
-                        <span
-                            class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#635bff] hover:text-[#635bff]"
-                        >
+                        <span class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#4f46e5] hover:text-[#4f46e5]">
                             Java
                         </span>
 
-
-                        <span
-                            class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#635bff] hover:text-[#635bff]"
-                        >
+                        <span class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#4f46e5] hover:text-[#4f46e5]">
                             SQL
                         </span>
 
-
                     </div>
 
                 </div>
-
 
 
                 <!-- Framework & Tools -->
-
                 <div>
 
-
-                    <h3
-                        class="text-sm font-semibold"
-                    >
+                    <h3 class="text-sm font-semibold">
                         Framework &amp; Tools
                     </h3>
 
+                    <div class="mt-3 flex flex-wrap gap-2">
 
-                    <div
-                        class="mt-3 flex flex-wrap gap-2"
-                    >
-
-
-                        <span
-                            class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#635bff] hover:text-[#635bff]"
-                        >
+                        <span class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#4f46e5] hover:text-[#4f46e5]">
                             Spring Boot
                         </span>
 
-
-                        <span
-                            class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#635bff] hover:text-[#635bff]"
-                        >
+                        <span class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#4f46e5] hover:text-[#4f46e5]">
                             PostgreSQL
                         </span>
 
-
-                        <span
-                            class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#635bff] hover:text-[#635bff]"
-                        >
+                        <span class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#4f46e5] hover:text-[#4f46e5]">
                             Figma
                         </span>
 
-
-                        <span
-                            class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#635bff] hover:text-[#635bff]"
-                        >
+                        <span class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#4f46e5] hover:text-[#4f46e5]">
                             Microsoft Excel
                         </span>
 
-
-                        <span
-                            class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#635bff] hover:text-[#635bff]"
-                        >
+                        <span class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#4f46e5] hover:text-[#4f46e5]">
                             Microsoft Word
                         </span>
 
-
-                        <span
-                            class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#635bff] hover:text-[#635bff]"
-                        >
+                        <span class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#4f46e5] hover:text-[#4f46e5]">
                             Microsoft PowerPoint
                         </span>
 
-
                     </div>
 
                 </div>
-
 
 
                 <!-- Bidang Minat -->
-
                 <div>
 
-
-                    <h3
-                        class="text-sm font-semibold"
-                    >
+                    <h3 class="text-sm font-semibold">
                         Bidang Minat
                     </h3>
 
+                    <div class="mt-3 flex flex-wrap gap-2">
 
-                    <div
-                        class="mt-3 flex flex-wrap gap-2"
-                    >
-
-
-                        <span
-                            class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#635bff] hover:text-[#635bff]"
-                        >
+                        <span class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#4f46e5] hover:text-[#4f46e5]">
                             Machine Learning
                         </span>
 
-
-                        <span
-                            class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#635bff] hover:text-[#635bff]"
-                        >
+                        <span class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#4f46e5] hover:text-[#4f46e5]">
                             UI/UX Design
                         </span>
 
-
-                        <span
-                            class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#635bff] hover:text-[#635bff]"
-                        >
+                        <span class="rounded-full border border-slate-300 px-3 py-1.5 text-sm transition hover:-translate-y-0.5 hover:border-[#4f46e5] hover:text-[#4f46e5]">
                             Data Analysis
                         </span>
-
 
                     </div>
 
                 </div>
-
 
             </div>
 
         </section>
 
-
     </main>
 
 
+    <!-- Footer -->
+    <footer class="mt-10 border-t border-slate-200 bg-white">
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer
-        class="mt-10 border-t border-slate-200 bg-white"
-    >
-
-
-        <div
-            class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-6 text-center text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8"
-        >
-
+        <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-6 text-center text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
 
             <p>
-
                 © 2026 Joyce Stephanie Naibaho
-
             </p>
 
-
-            <div
-                class="flex justify-center gap-5"
-            >
-
+            <div class="flex justify-center gap-5">
 
                 <a
                     href="index.html"
-                    class="transition hover:text-[#635bff]"
+                    class="transition hover:text-[#4f46e5]"
                 >
                     Home
                 </a>
 
-
                 <a
                     href="blog.html"
-                    class="transition hover:text-[#635bff]"
+                    class="transition hover:text-[#4f46e5]"
                 >
                     Blog
                 </a>
 
-
                 <a
                     href="cv.html"
-                    class="font-semibold text-[#635bff]"
+                    class="font-semibold text-[#4f46e5]"
                 >
                     CV
                 </a>
 
-
             </div>
-
 
         </div>
 
     </footer>
 
-
 </body>
-
 </html>
