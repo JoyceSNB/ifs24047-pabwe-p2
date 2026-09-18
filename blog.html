@@ -1,117 +1,217 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Blog — NexaLab</title>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Blog — NexaLab
+    </title>
+
 
     <!-- Bootstrap 5 -->
+
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
     >
 
+
     <!-- Bootstrap Icons -->
+
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
         rel="stylesheet"
     >
 
+
     <style>
+
         body {
+
             background: #f8fafc;
             color: #1f2937;
+
         }
+
 
         .navbar-brand {
+
             font-weight: 700;
+
         }
 
-        .brand-mark {
-            width: 36px;
-            height: 36px;
-            display: inline-grid;
-            place-items: center;
-            border-radius: 10px;
-            background: linear-gradient(135deg, #635bff, #8b5cf6);
-            color: #ffffff;
-            font-weight: 700;
-            margin-right: 8px;
+
+        /* Logo NexaLab */
+
+        .logo-img {
+
+            width: 145px;
+            height: auto;
+            display: block;
+
         }
+
+
+        @media (max-width: 991.98px) {
+
+            .logo-img {
+
+                width: 132px;
+
+            }
+
+        }
+
 
         .blog-hero {
+
             padding: 90px 0 60px;
-            background: linear-gradient(135deg, #eef2ff, #ffffff);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #eef2ff,
+                    #ffffff
+                );
+
         }
 
+
         .article-card {
+
             height: 100%;
+
             overflow: hidden;
+
             border: 0;
+
             border-radius: 18px;
-            box-shadow: 0 12px 35px rgba(15, 23, 42, 0.07);
+
+            box-shadow:
+                0 12px 35px
+                rgba(15, 23, 42, 0.07);
+
             transition:
                 transform 0.25s ease,
                 box-shadow 0.25s ease;
+
         }
+
 
         .article-card:hover {
+
             transform: translateY(-5px);
-            box-shadow: 0 18px 45px rgba(15, 23, 42, 0.11);
+
+            box-shadow:
+                0 18px 45px
+                rgba(15, 23, 42, 0.11);
+
         }
+
 
         .article-card img {
+
             width: 100%;
+
             height: 220px;
+
             object-fit: cover;
+
         }
+
 
         .article-title {
+
             color: #111827;
+
             text-decoration: none;
+
         }
+
 
         .article-title:hover {
+
             color: #635bff;
+
         }
+
 
         .meta {
+
             color: #6b7280;
+
             font-size: 0.85rem;
+
         }
+
 
         .footer {
+
             background: #111827;
+
             color: #d1d5db;
+
         }
+
 
         .footer a {
+
             color: #d1d5db;
+
             text-decoration: none;
+
         }
 
+
         .footer a:hover {
+
             color: #ffffff;
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav
+        class="navbar navbar-expand-lg bg-white border-bottom sticky-top"
+    >
 
         <div class="container py-2">
+
+
+            <!-- Logo NexaLab -->
 
             <a
                 class="navbar-brand d-flex align-items-center"
                 href="index.html"
             >
-                <span class="brand-mark">N</span>
-                NexaLab
+
+                <img
+                    src="assets/img/logo-nexalab.png"
+                    alt="NexaLab"
+                    class="logo-img"
+                >
+
             </a>
 
+
+            <!-- Mobile Button -->
 
             <button
                 class="navbar-toggler"
@@ -122,61 +222,83 @@
                 aria-expanded="false"
                 aria-label="Toggle navigation"
             >
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
 
+
+            <!-- Navigation -->
 
             <div
                 class="collapse navbar-collapse"
                 id="navbarMain"
             >
 
-                <ul class="navbar-nav ms-auto gap-lg-2">
+                <ul
+                    class="navbar-nav ms-auto gap-lg-2"
+                >
+
 
                     <li class="nav-item">
+
                         <a
                             class="nav-link"
                             href="index.html#layanan"
                         >
                             Layanan
                         </a>
+
                     </li>
 
+
                     <li class="nav-item">
+
                         <a
                             class="nav-link"
                             href="index.html#tentang"
                         >
                             Tentang
                         </a>
+
                     </li>
 
+
                     <li class="nav-item">
+
                         <a
                             class="nav-link"
                             href="index.html#kontak"
                         >
                             Kontak
                         </a>
+
                     </li>
 
+
                     <li class="nav-item">
+
                         <a
                             class="nav-link active fw-semibold"
                             href="blog.html"
                         >
                             Blog
                         </a>
+
                     </li>
 
+
                     <li class="nav-item">
+
                         <a
                             class="nav-link"
                             href="cv.html"
                         >
                             CV
                         </a>
+
                     </li>
+
 
                 </ul>
 
@@ -187,71 +309,126 @@
     </nav>
 
 
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
     <main>
 
+
         <!-- Header Blog -->
+
         <header class="blog-hero">
 
             <div class="container">
 
+
                 <span class="badge text-bg-primary mb-3">
+
                     <i class="bi bi-journal-text me-1"></i>
+
                     NexaLab Journal
+
                 </span>
 
+
                 <h1 class="display-4 fw-bold">
+
                     Insight tentang teknologi cerdas
+
                 </h1>
 
+
                 <p class="lead text-secondary mt-3 mb-0">
+
                     Artikel singkat mengenai AI, automasi, data, dan
                     teknologi digital yang berkembang dalam berbagai bidang.
+
                 </p>
+
 
             </div>
 
         </header>
 
 
+
         <!-- Daftar Blog -->
+
         <section class="container py-5">
 
+
             <!-- Filter -->
+
             <div class="d-flex flex-wrap gap-2 mb-4">
 
-                <span class="badge rounded-pill text-bg-primary">
+
+                <span
+                    class="badge rounded-pill text-bg-primary"
+                >
                     Semua
                 </span>
 
-                <span class="badge rounded-pill text-bg-light text-dark border">
+
+                <span
+                    class="badge rounded-pill text-bg-light text-dark border"
+                >
+
                     <i class="bi bi-stars me-1"></i>
+
                     Generative AI
+
                 </span>
 
-                <span class="badge rounded-pill text-bg-light text-dark border">
+
+                <span
+                    class="badge rounded-pill text-bg-light text-dark border"
+                >
+
                     <i class="bi bi-gear me-1"></i>
+
                     Automasi
+
                 </span>
 
-                <span class="badge rounded-pill text-bg-light text-dark border">
+
+                <span
+                    class="badge rounded-pill text-bg-light text-dark border"
+                >
+
                     <i class="bi bi-bar-chart me-1"></i>
+
                     Data
+
                 </span>
 
-                <span class="badge rounded-pill text-bg-light text-dark border">
+
+                <span
+                    class="badge rounded-pill text-bg-light text-dark border"
+                >
+
                     <i class="bi bi-camera me-1"></i>
+
                     Computer Vision
+
                 </span>
+
 
             </div>
 
 
+
             <div class="row g-4">
 
+
                 <!-- Artikel 1 -->
+
                 <div class="col-md-6 col-xl-3">
 
-                    <article class="card article-card">
+                    <article
+                        class="card article-card"
+                    >
 
                         <img
                             src="assets/img/blog-chatbot.png"
@@ -259,45 +436,84 @@
                             alt="Ilustrasi chatbot"
                         >
 
+
                         <div class="card-body p-4">
 
-                            <span class="badge text-bg-primary mb-3">
-                                <i class="bi bi-stars me-1"></i>
+
+                            <span
+                                class="badge text-bg-primary mb-3"
+                            >
+
+                                <i
+                                    class="bi bi-stars me-1"
+                                ></i>
+
                                 Generative AI
+
                             </span>
 
+
                             <h2 class="h5">
+
                                 <a
                                     href="blog-detail.html"
                                     class="article-title"
                                 >
+
                                     Membangun Chatbot yang Efektif
+
                                 </a>
+
                             </h2>
 
+
                             <p class="text-secondary small">
+
                                 Mengenal prinsip dasar chatbot yang mampu
                                 memberikan respons relevan dan mudah digunakan.
+
                             </p>
 
-                            <div class="meta mt-4 d-flex flex-wrap gap-3">
+
+                            <div
+                                class="meta mt-4 d-flex flex-wrap gap-3"
+                            >
 
                                 <span>
-                                    <i class="bi bi-person me-1"></i>
+
+                                    <i
+                                        class="bi bi-person me-1"
+                                    ></i>
+
                                     Joyce Stephanie
+
                                 </span>
 
+
                                 <span>
-                                    <i class="bi bi-calendar me-1"></i>
+
+                                    <i
+                                        class="bi bi-calendar me-1"
+                                    ></i>
+
                                     18 September 2026
+
                                 </span>
 
+
                                 <span>
-                                    <i class="bi bi-clock me-1"></i>
+
+                                    <i
+                                        class="bi bi-clock me-1"
+                                    ></i>
+
                                     5 menit
+
                                 </span>
+
 
                             </div>
+
 
                         </div>
 
@@ -306,10 +522,14 @@
                 </div>
 
 
+
                 <!-- Artikel 2 -->
+
                 <div class="col-md-6 col-xl-3">
 
-                    <article class="card article-card">
+                    <article
+                        class="card article-card"
+                    >
 
                         <img
                             src="assets/img/blog-automation.png"
@@ -317,45 +537,84 @@
                             alt="Ilustrasi automasi"
                         >
 
+
                         <div class="card-body p-4">
 
-                            <span class="badge text-bg-success mb-3">
-                                <i class="bi bi-gear me-1"></i>
+
+                            <span
+                                class="badge text-bg-success mb-3"
+                            >
+
+                                <i
+                                    class="bi bi-gear me-1"
+                                ></i>
+
                                 Automasi
+
                             </span>
 
+
                             <h2 class="h5">
+
                                 <a
                                     href="blog-detail.html"
                                     class="article-title"
                                 >
+
                                     Automasi untuk Pekerjaan Berulang
+
                                 </a>
+
                             </h2>
 
+
                             <p class="text-secondary small">
+
                                 Bagaimana automasi dapat membantu mengurangi
                                 pekerjaan repetitif dan mempercepat proses kerja.
+
                             </p>
 
-                            <div class="meta mt-4 d-flex flex-wrap gap-3">
+
+                            <div
+                                class="meta mt-4 d-flex flex-wrap gap-3"
+                            >
 
                                 <span>
-                                    <i class="bi bi-person me-1"></i>
+
+                                    <i
+                                        class="bi bi-person me-1"
+                                    ></i>
+
                                     Joyce Stephanie
+
                                 </span>
 
+
                                 <span>
-                                    <i class="bi bi-calendar me-1"></i>
+
+                                    <i
+                                        class="bi bi-calendar me-1"
+                                    ></i>
+
                                     15 September 2026
+
                                 </span>
 
+
                                 <span>
-                                    <i class="bi bi-clock me-1"></i>
+
+                                    <i
+                                        class="bi bi-clock me-1"
+                                    ></i>
+
                                     4 menit
+
                                 </span>
+
 
                             </div>
+
 
                         </div>
 
@@ -364,10 +623,14 @@
                 </div>
 
 
+
                 <!-- Artikel 3 -->
+
                 <div class="col-md-6 col-xl-3">
 
-                    <article class="card article-card">
+                    <article
+                        class="card article-card"
+                    >
 
                         <img
                             src="assets/img/blog-data.png"
@@ -375,45 +638,84 @@
                             alt="Ilustrasi data analytics"
                         >
 
+
                         <div class="card-body p-4">
 
-                            <span class="badge text-bg-warning mb-3">
-                                <i class="bi bi-bar-chart me-1"></i>
+
+                            <span
+                                class="badge text-bg-warning mb-3"
+                            >
+
+                                <i
+                                    class="bi bi-bar-chart me-1"
+                                ></i>
+
                                 Data
+
                             </span>
 
+
                             <h2 class="h5">
+
                                 <a
                                     href="blog-detail.html"
                                     class="article-title"
                                 >
+
                                     Dasar Predictive Analytics
+
                                 </a>
+
                             </h2>
 
+
                             <p class="text-secondary small">
+
                                 Memahami bagaimana data historis dapat digunakan
                                 untuk melihat pola dan membantu perencanaan.
+
                             </p>
 
-                            <div class="meta mt-4 d-flex flex-wrap gap-3">
+
+                            <div
+                                class="meta mt-4 d-flex flex-wrap gap-3"
+                            >
 
                                 <span>
-                                    <i class="bi bi-person me-1"></i>
+
+                                    <i
+                                        class="bi bi-person me-1"
+                                    ></i>
+
                                     Joyce Stephanie
+
                                 </span>
 
+
                                 <span>
-                                    <i class="bi bi-calendar me-1"></i>
+
+                                    <i
+                                        class="bi bi-calendar me-1"
+                                    ></i>
+
                                     12 September 2026
+
                                 </span>
 
+
                                 <span>
-                                    <i class="bi bi-clock me-1"></i>
+
+                                    <i
+                                        class="bi bi-clock me-1"
+                                    ></i>
+
                                     6 menit
+
                                 </span>
+
 
                             </div>
+
 
                         </div>
 
@@ -422,10 +724,14 @@
                 </div>
 
 
+
                 <!-- Artikel 4 -->
+
                 <div class="col-md-6 col-xl-3">
 
-                    <article class="card article-card">
+                    <article
+                        class="card article-card"
+                    >
 
                         <img
                             src="assets/img/blog-vision.png"
@@ -433,51 +739,91 @@
                             alt="Ilustrasi computer vision"
                         >
 
+
                         <div class="card-body p-4">
 
-                            <span class="badge text-bg-danger mb-3">
-                                <i class="bi bi-camera me-1"></i>
+
+                            <span
+                                class="badge text-bg-danger mb-3"
+                            >
+
+                                <i
+                                    class="bi bi-camera me-1"
+                                ></i>
+
                                 Computer Vision
+
                             </span>
 
+
                             <h2 class="h5">
+
                                 <a
                                     href="blog-detail.html"
                                     class="article-title"
                                 >
+
                                     Computer Vision untuk Inspeksi
+
                                 </a>
+
                             </h2>
 
+
                             <p class="text-secondary small">
+
                                 Pengenalan computer vision untuk membantu proses
                                 inspeksi visual secara lebih terstruktur.
+
                             </p>
 
-                            <div class="meta mt-4 d-flex flex-wrap gap-3">
+
+                            <div
+                                class="meta mt-4 d-flex flex-wrap gap-3"
+                            >
 
                                 <span>
-                                    <i class="bi bi-person me-1"></i>
+
+                                    <i
+                                        class="bi bi-person me-1"
+                                    ></i>
+
                                     Joyce Stephanie
+
                                 </span>
 
+
                                 <span>
-                                    <i class="bi bi-calendar me-1"></i>
+
+                                    <i
+                                        class="bi bi-calendar me-1"
+                                    ></i>
+
                                     10 September 2026
+
                                 </span>
 
+
                                 <span>
-                                    <i class="bi bi-clock me-1"></i>
+
+                                    <i
+                                        class="bi bi-clock me-1"
+                                    ></i>
+
                                     5 menit
+
                                 </span>
+
 
                             </div>
+
 
                         </div>
 
                     </article>
 
                 </div>
+
 
             </div>
 
@@ -486,12 +832,18 @@
     </main>
 
 
-    <!-- Footer -->
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer class="footer py-4">
 
         <div class="container">
 
+
             <div class="row align-items-center g-3">
+
 
                 <div class="col-md-6">
 
@@ -500,13 +852,16 @@
                     </strong>
 
                     <div class="small mt-1">
+
                         Solusi teknologi untuk kebutuhan digital modern.
+
                     </div>
 
                 </div>
 
 
                 <div class="col-md-6 text-md-end">
+
 
                     <a
                         href="index.html"
@@ -515,6 +870,7 @@
                         Home
                     </a>
 
+
                     <a
                         href="blog.html"
                         class="me-3"
@@ -522,11 +878,14 @@
                         Blog
                     </a>
 
+
                     <a href="cv.html">
                         CV
                     </a>
 
+
                 </div>
+
 
             </div>
 
@@ -535,9 +894,12 @@
     </footer>
 
 
+
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     ></script>
 
+
 </body>
+
 </html>
